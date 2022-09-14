@@ -9,6 +9,7 @@ app.use(express.json())
 // Middleware
 app.use(express.static(path.join(__dirname, "../public")))
 app.use("/images", express.static(path.join(__dirname, "../images")))
+app.use("/public/index.css", express.static(path.join(__dirname, "../public/index.css")))
 
 
 const port = process.env.PORT || 1994;
